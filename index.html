@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Егор & Любовь — 01.08.2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Petals -->
+    <div class="petals-container" id="petals"></div>
+
+    <!-- Navigation Dots -->
+    <nav class="nav-dots" id="navDots">
+        <button class="nav-dot active" data-section="hero" aria-label="Начало"></button>
+        <button class="nav-dot" data-section="invitation" aria-label="Приглашение"></button>
+        <button class="nav-dot" data-section="countdown" aria-label="Обратный отсчёт"></button>
+        <button class="nav-dot" data-section="details" aria-label="Детали"></button>
+        <button class="nav-dot" data-section="schedule" aria-label="Расписание"></button>
+        <button class="nav-dot" data-section="gifts" aria-label="Подарки"></button>
+        <button class="nav-dot" data-section="rsvp" aria-label="Анкета"></button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="floral-frame">
+            <div class="floral-corner floral-corner--tl"></div>
+            <div class="floral-corner floral-corner--tr"></div>
+            <div class="floral-corner floral-corner--bl"></div>
+            <div class="floral-corner floral-corner--br"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-top-text">Приглашение на свадьбу</p>
+            <h1 class="hero-names">
+                Егор
+                <span class="hero-ampersand">&</span>
+                Любовь
+            </h1>
+            <p class="hero-date">01 &bull; 08 &bull; 2026</p>
+        </div>
+        <div class="hero-scroll">
+            <a href="#invitation">
+                <span>Листайте</span>
+                <span class="scroll-arrow"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== INVITATION ===== -->
+    <div class="invitation" id="invitation">
+        <div class="invitation-inner reveal">
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon">&#10047;</span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="invitation-text">
+                <p id="greeting">Дорогие и любимые!</p>
+                <p>
+                    В нашей жизни наступает самый волшебный день —<br>
+                    день, когда два сердца становятся одним.
+                </p>
+                <span class="invitation-highlight">Мы женимся!</span>
+                <p id="inviteBody">
+                    И&nbsp;будем безмерно счастливы разделить это радостное событие
+                    именно с&nbsp;вами — людьми, которые нам так дороги.
+                </p>
+                <p id="inviteCall">
+                    Приглашаем вас стать свидетелями нашей любви<br>
+                    и&nbsp;разделить с нами этот незабываемый день.
+                </p>
+            </div>
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon">&#10047;</span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== COUNTDOWN ===== -->
+    <div class="countdown-section" id="countdown">
+        <div class="section-inner reveal">
+            <h2 class="section-title">До нашей свадьбы</h2>
+            <p class="section-subtitle">осталось совсем чуть-чуть</p>
+            <div class="countdown" id="countdownTimer">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">000</span>
+                    <span class="countdown-label">дней</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">часов</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">минут</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">секунд</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== DETAILS ===== -->
+    <section class="details" id="details">
+        <div class="details-inner">
+            <h2 class="section-title reveal">Детали торжества</h2>
+            <p class="section-subtitle reveal">всё, что нужно знать</p>
+            <div class="details-grid">
+                <div class="detail-card reveal">
+                    <span class="detail-icon">&#128205;</span>
+                    <h3>Церемония</h3>
+                    <p class="detail-main">1 августа 2026</p>
+                    <p>
+                        Сбор гостей в 15:00<br>
+                        Начало церемонии в 16:00
+                    </p>
+                </div>
+                <div class="detail-card detail-card--venue reveal">
+                    <div class="detail-card-photo">
+                        <img src="place.jpg" alt="Место проведения">
+                    </div>
+                    <div class="detail-card-content">
+                        <h3>Место проведения</h3>
+                        <p class="detail-main">Ресторан «Название»</p>
+                        <p>
+                            г. Город, ул. Примерная, 1<br>
+                            <em style="font-size: 12px; opacity: 0.7;">Адрес будет уточнён</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-card reveal">
+                    <span class="detail-icon">&#128134;</span>
+                    <h3>Дресс-код</h3>
+                    <p class="detail-main">Нарядный / Коктейльный</p>
+                    <p>
+                        Будем рады видеть вас<br>
+                        в нежных пастельных тонах
+                    </p>
+                </div>
+                <div class="detail-card reveal">
+                    <span class="detail-icon">&#128663;</span>
+                    <h3>Трансфер</h3>
+                    <p class="detail-main">Автобус для гостей</p>
+                    <p>
+                        Мы организуем трансфер —<br>
+                        детали сообщим ближе к дате
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCHEDULE ===== -->
+    <div class="timeline-section" id="schedule">
+        <div class="timeline-inner">
+            <h2 class="section-title reveal">Программа дня</h2>
+            <p class="section-subtitle reveal">как всё будет</p>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">15:00</div>
+                    <div class="timeline-desc">
+                        <h4>Сбор гостей</h4>
+                        <p>Welcome-коктейль</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">16:00</div>
+                    <div class="timeline-desc">
+                        <h4>Церемония</h4>
+                        <p>Самый трогательный момент</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">17:00</div>
+                    <div class="timeline-desc">
+                        <h4>Фуршет</h4>
+                        <p>Лёгкие закуски и шампанское</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">18:00</div>
+                    <div class="timeline-desc">
+                        <h4>Банкет</h4>
+                        <p>Ужин и развлечения</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">21:00</div>
+                    <div class="timeline-desc">
+                        <h4>Вечеринка</h4>
+                        <p>Танцы до утра!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== GIFTS ===== -->
+    <div class="gifts-section" id="gifts">
+        <div class="gifts-inner reveal">
+            <h2 class="section-title">Пожелания о подарках</h2>
+            <p class="section-subtitle">от всего сердца</p>
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon">&#10047;</span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="gifts-text">
+                Самый лучший подарок для нас —<br>
+                это ваше присутствие и тёплые слова.
+            </p>
+            <p class="gifts-text">
+                Но если вы хотите сделать нам подарок,<br>
+                мы будем рады вкладу в наше<br>
+                <span class="invitation-highlight" style="font-size: 28px;">свадебное путешествие</span>
+            </p>
+            <div class="gift-icon-row">
+                <span>&#9992;</span>
+                <span>&#127758;</span>
+                <span>&#10084;</span>
+            </div>
+            <p class="gifts-note">
+                Мы мечтаем отправиться в путешествие мечты,<br>
+                и ваш вклад поможет сделать его незабываемым.
+            </p>
+        </div>
+    </div>
+
+    <!-- ===== RSVP ===== -->
+    <div class="rsvp-section" id="rsvp">
+        <div class="rsvp-inner">
+            <h2 class="section-title reveal">Подтверждение</h2>
+            <p class="section-subtitle reveal">ждём вашего ответа</p>
+            <form class="rsvp-form reveal" id="rsvpForm">
+                <div class="form-group">
+                    <label>Ваше имя и фамилия</label>
+                    <input type="text" name="name" placeholder="Иван Иванов" required>
+                </div>
+                <div class="form-group">
+                    <label>Вы придёте?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="attendYes" name="attend" value="yes" required>
+                            <label for="attendYes">С радостью!</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="attendNo" name="attend" value="no">
+                            <label for="attendNo">К сожалению, нет</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Пожелания или комментарий</label>
+                    <textarea name="message" placeholder="Напишите нам что-нибудь приятное или укажите аллергии / особые пожелания..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Отправить ответ</span>
+                </button>
+            </form>
+            <div class="form-success" id="formSuccess">
+                <h3>Спасибо!</h3>
+                <p>Мы получили ваш ответ и&nbsp;очень рады!<br>До встречи на нашей свадьбе!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-heart">&#10084;</div>
+        <div class="footer-names">Егор & Любовь</div>
+        <div class="footer-date">01 &bull; 08 &bull; 2026</div>
+        <p class="footer-note">С любовью и нетерпением ждём вас</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
